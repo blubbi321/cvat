@@ -55,7 +55,7 @@ builtin functions like __str, int, float, max, min, range__.
       * __frame_id__ - frame number
       * __frame_height__ - frame height
       * __frame_width__ - frame width
-      * __detections__ - output np.ndarray (See [ExecutableNetwork.infer](https://software.intel.com/en-us/articles/OpenVINO-InferEngine#inpage-nav-11-6-3) for details).
+      * __detections__ - output np.ndarray (See [ExecutableNetwork.infer](https://docs.openvinotoolkit.org/latest/_inference_engine_ie_bridges_python_docs_api_overview.html#executablenetwork-methods) for details).
 
    - __results__ - an instance of python class with converted results.
      Following methods should be used to add shapes:
