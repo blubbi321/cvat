@@ -15,7 +15,7 @@ To annotate a task with a custom model you need to prepare 4 files:
 1. __Model config__ (*.xml) - a text file with network configuration.
 1. __Model weights__ (*.bin) - a binary file with trained weights.
 1. __Label map__ (*.json) - a simple json file with `label_map` dictionary like
-object with string values for label numbers.
+object with string values for label numbers. Label numbers need to start at 0 and increase from there as shown below.
   Example:
     ```json
     {
@@ -55,7 +55,7 @@ builtin functions like __str, int, float, max, min, range__.
       * __frame_id__ - frame number
       * __frame_height__ - frame height
       * __frame_width__ - frame width
-      * __detections__ - output np.ndarray (See [ExecutableNetwork.infer](https://software.intel.com/en-us/articles/OpenVINO-InferEngine#inpage-nav-11-6-3) for details).
+      * __detections__ - output np.ndarray (See [ExecutableNetwork.infer](https://docs.openvinotoolkit.org/latest/_inference_engine_ie_bridges_python_docs_api_overview.html#executablenetwork-methods) for details).
 
    - __results__ - an instance of python class with converted results.
      Following methods should be used to add shapes:

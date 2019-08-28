@@ -7,7 +7,7 @@ A small command line program to test and run AutoAnnotation Scripts.
 Change in to the root of the project directory and run
 
 ```shell
-$ python cvat/utils/auto_annotation/run_modely.py --py /path/to/python/interp.py \
+$ python cvat/utils/auto_annotation/run_model.py --py /path/to/python/interp.py \
                                                   --xml /path/to/xml/file.xml \
                                                   --bin /path/to/bin/file.bin \
                                                   --json /path/to/json/mapping/mapping.json
@@ -18,7 +18,7 @@ Some programs need to run unrestricted or as an administer. Use the `--unrestric
 You can pass image files in to fully simulate your findings. Images are passed in as a list
 
 ```shell
-$ python cvat/utils/auto_annotation/run_modely.py --py /path/to/python/interp.py \
+$ python cvat/utils/auto_annotation/run_model.py --py /path/to/python/interp.py \
                                                   --xml /path/to/xml/file.xml \
                                                   --bin /path/to/bin/file.bin \
                                                   --json /path/to/json/mapping/mapping.json \
@@ -29,7 +29,7 @@ Additionally, it's sometimes useful to visualize your images.
 Use the `--show-images` flag to have each image with the annotations pop up. 
 
 ```shell
-$ python cvat/utils/auto_annotation/run_modely.py --py /path/to/python/interp.py \
+$ python cvat/utils/auto_annotation/run_model.py --py /path/to/python/interp.py \
                                                   --xml /path/to/xml/file.xml \
                                                   --bin /path/to/bin/file.bin \
                                                   --json /path/to/json/mapping/mapping.json \
@@ -42,7 +42,7 @@ Use the `--show-image-delay` flag and set the appropriate time.
 
 ```shell
 # Display each image in a window for 2 seconds
-$ python cvat/utils/auto_annotation/run_modely.py --py /path/to/python/interp.py \
+$ python cvat/utils/auto_annotation/run_model.py --py /path/to/python/interp.py \
                                                   --xml /path/to/xml/file.xml \
                                                   --bin /path/to/bin/file.bin \
                                                   --json /path/to/json/mapping/mapping.json \
