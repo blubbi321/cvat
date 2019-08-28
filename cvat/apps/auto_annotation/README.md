@@ -15,7 +15,7 @@ To annotate a task with a custom model you need to prepare 4 files:
 1. __Model config__ (*.xml) - a text file with network configuration.
 1. __Model weights__ (*.bin) - a binary file with trained weights.
 1. __Label map__ (*.json) - a simple json file with `label_map` dictionary like
-object with string values for label numbers.
+object with string values for label numbers. Label numbers need to start at 0 and increase from there as shown below.
   Example:
     ```json
     {
